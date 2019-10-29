@@ -1,0 +1,23 @@
+{
+  "name": "mongo_course",
+  "version": "1.0.0",
+  "description": "This is the project for an MongoDB course teached by Azael Contreras.",
+  "scripts": {
+    "dev": "ts-node ./src/index.ts",
+    "test": "jest"
+  },
+  "author": "Azael Contreras",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.20",
+    "@types/node": "^12.11.7",
+    "jest": "^24.9.0",
+    "npm-run-all": "^4.1.5",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "@types/mongodb": "^3.3.6",
+    "mongodb": "^3.3.3"
+  }
+}

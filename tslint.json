@@ -1,0 +1,98 @@
+{
+  "rules": {
+    "adjacent-overload-signatures": true,
+    "array-type": [true, "generic"],
+    "class-name": true,
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "curly": true,
+    "cyclomatic-complexity": true,
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "max-classes-per-file": [true, 1],
+    "max-line-length": [true, 140],
+    "max-file-line-count": [true, 900],
+    "member-ordering": [true,
+      "fields-first",
+      "public-before-protected",
+      "public-before-private",
+      "protected-before-private",
+      "static-before-instance",
+      "variables-before-functions"
+    ],
+    "member-access": true,
+    "newline-before-return": true,
+    "new-parens": true,
+    "no-any": false,
+    "no-consecutive-blank-lines": true,
+    "no-duplicate-variable": true,
+    "no-duplicate-super": true,
+    "no-duplicate-switch-case": true,
+    "no-empty": true,
+    "no-empty-interface": true,
+    "no-eval": true,
+    "no-magic-numbers": true,
+    "no-internal-module": true,
+    "no-irregular-whitespace": true,
+    "no-trailing-whitespace": true,
+    "no-unsafe-finally": true,
+    "no-var-keyword": true,
+    "number-literal-format": true,
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-whitespace"
+    ],
+    "one-variable-per-declaration": true,
+    "only-arrow-functions": false,
+    "ordered-imports": true,
+    "arrow-parens": true,
+    "quotemark": [
+      true,
+      "double"
+    ],
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "trailing-comma": true,
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore"
+    ],
+    "prefer-for-of": true,
+    "prefer-method-signature": true,
+    "forin": true,
+    "object-literal-key-quotes": [true, "as-needed"],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-module",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ]
+  }
+}
