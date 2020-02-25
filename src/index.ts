@@ -1,12 +1,10 @@
 import { MongoClient, Db } from "mongodb";
-// import { searchForC } from "./functions/pigsOnTheWing";
-const client = new MongoClient('mongodb://localhost:27017/test');
+const client = new MongoClient('mongodb://localhost:27017/video');
 
 async function init (): Promise<Db> {
   try {
     await client.connect();
-    const db = client.db('test');
-
+    const db = client.db('video');
     return db;
   } catch (error) {
     throw new Error(error);

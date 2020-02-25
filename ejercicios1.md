@@ -41,6 +41,20 @@ d)  db.people.find({ "first_name": "Jessica" }).sort({ "address.state": 1, "addr
 e)  db.people.find({ "first_name": "Jessica", "address.state": { $lt: "S"} }).sort({ "address.state": 1 })
 ```
 ## Ejercicio 5
-- Ve al archivo `data/excercise1.ts` y escribe el query que devuelva todas las personas cuyo
-apellido y ciudad comiencen con C, selecciona sólo el apellido y la ciudad y ordena con base
-a la ciudad de forma ascendente.
+- ¿Que se puede deducir de ejecutar la funcion `explain()`?
+
+  a) Los index disponibles en la colección
+
+  b) Si un ordenamiento fue hecho en memoria o con un index
+
+## Ejercicio 6
+- ¿Dado el siguiente query, cual es el indice que cumplirá la regla de **equality, sort,  range**?
+```
+db.accounts.find( { accountBalance : { $gte : NumberDecimal(100000.00) }, city: "New York" } )
+           .sort( { lastName: 1, firstName: 1 } )
+```
+  a) `{ accountBalance: 1, city: 1, lastName: 1, firstName: 1 }`
+
+  b) `{ lastName: 1, firstName: 1, accountBalance: 1, city: 1 }`
+
+  c) `{ city: 1, lastName: 1, firstName: 1, accountBalance: 1 }`
