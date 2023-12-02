@@ -1,12 +1,14 @@
-import { MongoClient, Db } from "mongodb";
-const client = new MongoClient('mongodb://localhost:27017/video');
+import { MongoClient, Db } from 'mongodb';
+import { searchForC } from './functions/aWalkAround';
+
+const client = new MongoClient('mongodb+srv://<username>:<password>@mflix.zafbexs.mongodb.net/?retryWrites=true&w=majority');
 
 async function init (): Promise<Db> {
   try {
     await client.connect();
-    const db = client.db('video');
+    const db = client.db('sample_restaurants');
     return db;
-  } catch (error) {
+  } catch (error: any) {
     throw new Error(error);
   }
 }
@@ -15,7 +17,15 @@ async function endConnection() {
   client.close();
 }
 init();
-export {
-  init,
-  endConnection
-}
+
+(async () => {
+  try {
+      const res_db = await init();
+      const result = await searchForC(res_db);
+      console.log(result);
+      endConnection();
+  } catch (e) {
+      // Deal with the fact the chain failed
+  }
+  // `text` is not available here
+})();

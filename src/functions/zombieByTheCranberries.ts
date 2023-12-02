@@ -1,5 +1,5 @@
 import { Db } from "mongodb";
-import { someCoins } from "../data/excercise2";
+import { someCoins } from "../data/hands-on-2";
 
 function howAboutARide(result: any): number {
   let sum = 0;

@@ -1,5 +1,5 @@
 import { Db } from "mongodb";
-import { centrefolds } from "../data/excercise3";
+import { centrefolds } from "../data/hands-on-3";
 
 function iveBeenWaiting (first: any): boolean {
   const indx = first.count / 3;
