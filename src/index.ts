@@ -1,5 +1,6 @@
 import { MongoClient, Db } from 'mongodb';
 import { searchForC } from './functions/aWalkAround';
+// import { execHandsOn } from './functions/basicUsage';
 
 const client = new MongoClient('mongodb+srv://<username>:<password>@mflix.zafbexs.mongodb.net/?retryWrites=true&w=majority');
 

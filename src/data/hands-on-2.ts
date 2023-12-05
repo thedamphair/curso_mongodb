@@ -1,5 +1,5 @@
 import { Db } from "mongodb";
-const MOVIE_DETAILS = "movieDetails";
+const MOVIE_DETAILS = "movies";
 
 async function someCoins (db: Db): Promise<any> {
   try {

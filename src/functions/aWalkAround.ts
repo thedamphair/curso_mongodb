@@ -1,5 +1,5 @@
 import { Db } from 'mongodb';
-import { findRestaurants, updateRestaurant } from '../data/hands-on-1';
+import { findRestaurants, updateRestaurant } from '../data/walkAroundData';
 
 const newRestaurant = {
   address: {
