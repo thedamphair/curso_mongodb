@@ -17,3 +17,9 @@ npm i
 ## Preparing the Project
 ### Connect to database
 - Replace the database connection at `index.ts` file line 2.
+
+### Starting the project
+- Run:
+```
+npm run dev
+```
